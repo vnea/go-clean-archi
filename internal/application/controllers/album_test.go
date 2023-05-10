@@ -31,7 +31,7 @@ var albumController = AlbumController{
 
 func TestRouteGetAlbums_ShouldReturnAlbums(t *testing.T) {
 	// Given
-	router := setupRouter(albumController)
+	router := SetupRouter(albumController)
 
 	responseWriter := httptest.NewRecorder()
 	request, _ := http.NewRequest(
